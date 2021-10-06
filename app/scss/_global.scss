@@ -10,7 +10,6 @@ body{
 body{
     display: flex;
     flex-direction: column;
-    color:$default;
     @extend %rubik-400;
 }
 

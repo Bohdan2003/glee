@@ -423,21 +423,21 @@
         height: 46px;
         width: 46px;
         border-radius: 50%;
-    }
-
-    &__search,
-    &__heart{
-        background-color: #fff
-    }
-
-    &__cart{
-        background-color:$gray; 
+        background-color: #fff;
+        transition: all .3s;
+        &:hover{
+            background-color: $gray;  
+            path{
+                fill:#fff; 
+            } 
+        }   
     }
 
     &__type{
         color:#243f4d;  
         margin-bottom: 10px;
         @extend %dmsans-500; 
+        
     }
 
     &__pric{

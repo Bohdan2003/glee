@@ -5,28 +5,33 @@ $accent:#fcd7b6;
 $accent-liht:#fef7f0;
 
 %dmsans-700{
-    font-family: "DMSans-Bold",sans-serif;
+    font-family: "DMSans-Bold";
     font-weight: 700;
 }
 
 %dmsans-500{
-    font-family: "DMSans-Medium",sans-serif;
+    font-family: "DMSans-Medium";
     font-weight: 500;
 }
 
 %dmsans-400{
-    font-family: "DMSans-Regular",sans-serif;
+    font-family: "DMSans-Regular";
     font-weight: 400;
 }
 
 %rubik-500{
-    font-family: "Rubik-Medium",sans-serif;
+    font-family: "Rubik-Medium";
     font-weight: 500;
 }
 
 %rubik-400{
-    font-family: "Rubik-Regular",sans-serif;
+    font-family: "Rubik-Regular";
     font-weight: 400;
+}
+
+%poppins-700{
+    font-family: "Poppins-Bold";
+    font-weight: 700;
 }
 
 %title{
@@ -35,3 +40,4 @@ $accent-liht:#fef7f0;
     text-align: center;
     color:$title;
 }
+

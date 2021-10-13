@@ -3,9 +3,10 @@ $(function(){
         arrows:false,
         dots:true,
         fade:true,
-        autoplay:true,
-        autoplaySpeed:3000
+      //   autoplay:true,
+      //   autoplaySpeed:3000
    });
 
    var mixer = mixitup('.products__items');
+   var mixer = mixitup('.design__items');
 });

@@ -3,30 +3,51 @@ $title:#191919;
 $gray:#a3bbc8;
 $accent:#fcd7b6;
 $accent-liht:#fef7f0;
+$blue:#243f4d;
 
 %dmsans-700{
-    font-family: "DMSans-Bold",sans-serif;
+    font-family: "DMSans-Bold";
     font-weight: 700;
 }
 
 %dmsans-500{
-    font-family: "DMSans-Medium",sans-serif;
+    font-family: "DMSans-Medium";
     font-weight: 500;
 }
 
 %dmsans-400{
-    font-family: "DMSans-Regular",sans-serif;
+    font-family: "DMSans-Regular";
     font-weight: 400;
 }
 
+%rubik-700{
+    font-family: "Rubik-Bold";
+    font-weight: 500;
+}
+
 %rubik-500{
-    font-family: "Rubik-Medium",sans-serif;
+    font-family: "Rubik-Medium";
     font-weight: 500;
 }
 
 %rubik-400{
-    font-family: "Rubik-Regular",sans-serif;
+    font-family: "Rubik-Regular";
     font-weight: 400;
+}
+
+%rubik-300{
+    font-family: "Rubik-Light";
+    font-weight: 300;
+}
+
+%poppins-700{
+    font-family: "Poppins-Bold";
+    font-weight: 700;
+}
+
+%poppins-600{
+    font-family: "Poppins-SemiBold";
+    font-weight: 6  00;
 }
 
 %title{
@@ -34,4 +55,18 @@ $accent-liht:#fef7f0;
     font-size: 36px;
     text-align: center;
     color:$title;
+}
+
+%title-child{
+    font-size: 36px;
+    @extend %dmsans-700;
+    line-height: 32px;
+    color:$blue;
+}
+
+%text{
+    @extend %rubik-400;
+    font-size: 16px;
+    line-height: 30px;
+    color:$blue;
 }

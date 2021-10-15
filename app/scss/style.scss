@@ -994,8 +994,10 @@
       
 }
 
-.blog__page{
+.blog__page,
+.sponsor__page{
     padding-top: 0;
+    margin-top: 0;
 }
 
 .terms{
@@ -1021,6 +1023,63 @@
 
     &__text{
         margin-bottom: 50px;
+    }
+}
+
+.modal{
+    padding: 115px 0;
+    max-width:470px;
+    margin: 0 auto;
+    font-size: 14px;
+    color:$default;
+
+    &__input{
+        display: block;
+        width: 100%;
+        height: 60px;
+        padding:0 15px;
+        margin: 10px 0 28px;
+        border: 2px solid #f6f6f6;
+    }
+
+    &__btn{
+        padding: 19px 0;
+        width: 100%;
+        border:none;
+        background-color: $gray;
+        color:#fff;
+        font-size: 18px;
+        @extend %rubik-500;
+        margin-bottom: 35px;
+        cursor: pointer;
+    }
+
+    &__descr{
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 28px;
+        border-bottom: 2px solid #f6f6f6;
+    }
+
+    &__link-repassword{
+        color:$default;
+    }
+
+    &__text{
+        margin: 28px 0;
+        text-align: center;  
+    }
+
+    &__link{
+        cursor: pointer;
+        border:2px solid $gray;
+        color: $blue;
+        font-size: 18px;
+        @extend %rubik-500;
+        padding: 17px 0;
+        width: 100%;
+        display: block;
+        text-align: center;
     }
 }
 

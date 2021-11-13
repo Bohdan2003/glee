@@ -1,0 +1,137 @@
+
+
+@media(max-width:1450px){
+    .slider-content{
+        padding: 50px;
+        &__item{
+            padding: 0 20px;
+        }   
+        &__title{
+            font-size: 60px;
+        }
+        &__img{
+            width: 665px;
+            height: 550px;
+        }      
+    }
+}
+
+@media(max-width:1200px){
+    .slider-content{
+        padding: 50px;
+        &__item{
+            padding: 0 20px;
+        }   
+        &__info{
+            padding-right: 40px;
+        }
+        &__title{
+            font-size: 50px;
+            line-height: 60px;
+            margin-bottom: 25px;
+        }
+        &__img{
+            width: 485px;
+            height: 485px;
+        }      
+    }
+    .slider-descr{
+        &__item{
+            padding-left: 80px;
+        }
+        .delivery,
+        .on7,
+        .payment{
+            &::before{               
+                left: 0px;
+            }
+        }
+    }
+}
+
+@media(max-width:1000px){
+    .slider-content{
+        &__item{
+            justify-content: left;
+        }
+        &__info{
+            padding: 40px 0;
+        }
+        &__img-link{
+           display: none;
+        }      
+    }
+    .slider-descr{
+        padding: 0;
+        flex-direction: column;
+        &::after, 
+        &::before{
+            display: none;
+        }
+        &__item{
+            padding-top: 20px;
+            padding-bottom: 20px;
+            max-width: 100%;  
+            border-bottom: 1px solid #e8e4df;
+            &:last-child{
+                border: none;
+            }
+        }
+        .delivery,
+        .on7,
+        .payment{
+            &::before{               
+                top: 30px;
+                left: 8px;
+            }
+        }
+        &__text{
+            max-width: 100%;
+        }
+    }
+}
+
+@media(max-width:700px){
+    .slider-content{
+        display: block;
+        padding:50px 20px;
+        &__item{
+            padding: 0;
+            display: block !important;
+            text-align: left;
+        }
+        &__title{
+            font-size: 45px;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+    }
+}
+
+@media(max-width:600px){
+    .slider-content{
+        &__title{
+            font-size: 40px;
+            line-height: 50px;
+            max-width: 100%;
+            margin-bottom: 15px;
+        }
+        &__link{
+            padding-right: 60px;
+        }
+    }
+}
+
+@media(max-width:450px){
+    .slider-content{
+        &__title{
+            font-size: 30px;
+        }
+    }
+
+    .slider-descr{     
+        &__item{
+            padding-right: 5px;
+        }       
+    }
+}

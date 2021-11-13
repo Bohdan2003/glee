@@ -78,3 +78,15 @@ $blue:#243f4d;
     position: absolute;
     overflow: hidden;
 }
+
+@media(max-width:700px){
+    %title{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:450px){
+    %title{
+        font-size: 26px;
+    }
+}

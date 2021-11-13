@@ -1,5 +1,13 @@
 $(function(){
 
+    $('.shop__filters-btn').on('click', function(){
+        $('.shop-filters').slideToggle();
+    });
+
+    $('.menu__btn').on('click', function(){
+        $('.menu__btn').toggleClass('menu__btn--active');
+    });
+
     $('.related__slider').slick({
         slidesToShow:4,
         slidesToScroll:2,

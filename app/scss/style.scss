@@ -13,6 +13,7 @@
 }
 
 .logo{
+    width: 300px;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -27,7 +28,21 @@
 }
 
 .menu{
-    padding-left: 100px;
+    &__btn{
+        display: none;
+        background-color: transparent;
+        border: none;
+        width: 25px;
+        height: 29px;
+        background-image: url('../images/icons/chevron-down-solid.svg');
+        background-repeat: no-repeat;
+    }
+    &__btn--active{
+        background-image: url('../images/icons/chevron-up-solid.svg');
+        &+.menu__list{
+            transform: translateY(0%);
+        }
+    }
     &__list{
         display: flex;
     }
@@ -196,17 +211,17 @@
 }
 
 .slider-content{
-    padding: 210px 0 280px;
+    padding: 100px 0 85px;
     background-color: $accent;
-    background-image: url('../images/slider-bg.png');
-    background-repeat: no-repeat;
-    background-position: 85% 41%;
     &__item{
         display: flex !important;
-        padding-left: 300px;
+        justify-content: center;
+        padding-left: 70px;
+        padding-right: 10px;
     }
     
     &__info{
+        padding-top: 110px;
         padding-right: 140px;
     }
 
@@ -246,17 +261,17 @@
         }
     }
 
-    &__link-img{
-        width: 640px;
-        height: 340px;    
-        background-repeat: no-repeat;
-        background-position: center bottom;
+    &__img{
+        width: 755px;
+        height: 634px;    
+        object-fit: contain;
+        object-position: center;
     }
 }
 
 .slick-dots{
     position: absolute;
-    bottom: -200px;
+    bottom: -35px;
     left: 50%;
     transform: translateX(-50%);
     display: flex ;
@@ -289,6 +304,20 @@
     padding: 40px 0;
     display: flex;
     justify-content:space-around;
+    position: relative;
+        &::after, 
+        &::before{
+            content: '';
+            position: absolute;
+            right: 33.33%;
+            top: 0px;
+            width: 1px;
+            height: 100%;
+            background-color: #e8e4df;
+        }
+        &::before{           
+            left: 33.33%;
+        }
     
     &__item{
         max-width: 370px;
@@ -303,6 +332,7 @@
     }
 
     &__text{
+        max-width: 210px;
         font-size: 16px;
         line-height: 30px;
         color:#585858;
@@ -365,13 +395,10 @@
         background-color: transparent;
         color:#8b8b8b;
         transition: all .2s;
+        margin:0 15px;
         &:hover{
           color:$title;  
         }
-    }
-
-    &__button+&__button{
-        margin-left: 30px;
     }
 
     &__items{
@@ -563,28 +590,31 @@
     padding: 100px 0;
     &__items{
         display: flex;
-        justify-content: space-between;
     }
 }
 
 .futures-item{   
     max-width: 870px;
     width: 100%;
-    padding: 80px 0 100px 385px;
     min-height: 390px;
     background-color: #feefe2;
+    padding: 0 20px;
     @extend %rubik-500;
     color:#243f4d;
-    position: relative;
-
+    display: flex;
+    justify-content: center;
+    &:first-child{
+        margin-right: 30px;
+    }
     &__img{
-        position: absolute;
         width: 250px;
         height: 405px;
-        background-repeat: no-repeat;
-        background-position: center;
-        top: -110px;
-        left: 120px;
+        object-fit: contain;
+        margin-top: -110px;
+        margin-right: 20px;
+    }
+    &__content{
+        padding-top: 100px; 
     }
 
     &__title{
@@ -642,13 +672,10 @@
         background-color: transparent;
         color:#8b8b8b;
         transition: all .2s;
+        margin: 0 15px;
         &:hover{
           color:$title;  
         }
-    }
-
-    &__btn+&__btn{
-        margin-left: 30px;
     }
 
     &__items{
@@ -819,9 +846,8 @@
     &__title{
         @extend %rubik-300;
         font-size: 36px;
-        line-height: 24px;
+        line-height: 44px;
         color:#222933;
-        margin-bottom: 10px;
     }   
 }
 
@@ -918,11 +944,14 @@
 .experience-statistics{
     display: flex;
     &__item{
-        padding: 40px 35px 0 90px;
+        padding: 40px 35px 0 90px;  
+    }
+
+    &__item-wrapper{ 
         position: relative;       
     }
 
-    &__item+&__item{
+    &__item-wrapper+&__item-wrapper{
         &::before{
             position: absolute;
             content: '';
@@ -1206,6 +1235,15 @@
     &__inner{
         display: flex;
     }
+    &__filters-btn{
+        height: 50px;
+        width: 50px;
+        background-color: #edf1f4;
+        cursor: pointer;
+        
+        margin-bottom: 30px;
+        display: none;
+    }
 }
 
 .shop-filters{
@@ -1409,9 +1447,11 @@
     justify-content: center;
     &__list{
         display: flex;
+        flex-wrap: wrap;
     }
     &__item,
     &__next{
+        margin-bottom: 20px;
         transition: all .3s;
         min-width: 50px;
         height: 50px;

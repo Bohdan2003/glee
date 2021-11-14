@@ -38,7 +38,13 @@ $(function(){
         slidesToShow: 1,
         arrows:false,
         draggable:false,
-        fade:true
+        fade:true,
+        responsive:[ {
+            breakpoint: 900,
+            settings: {
+                draggable:true
+            }
+          },],
     });
 
     $('.star').rateYo({

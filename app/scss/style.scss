@@ -1646,9 +1646,7 @@
         color:$blue;
         line-height: 53px;
         padding: 0 10px;
-        &+&{
-            margin-left: 13px;
-        }
+        margin: 0 7px;
     }
     &__top-link--active{
         background-color: #a3bbc8;

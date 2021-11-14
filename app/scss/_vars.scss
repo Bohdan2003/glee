@@ -70,3 +70,23 @@ $blue:#243f4d;
     line-height: 30px;
     color:$blue;
 }
+
+%checkbox{
+    width: 1px;
+    height: 1px;
+    clip: rect(0 0 0 0);
+    position: absolute;
+    overflow: hidden;
+}
+
+@media(max-width:700px){
+    %title{
+        font-size: 30px;
+    }
+}
+
+@media(max-width:450px){
+    %title{
+        font-size: 26px;
+    }
+}

@@ -1,0 +1,17 @@
+@media(max-width:1100px){
+    .terms{
+        padding: 80px 10px 40px;
+    }
+}
+
+@media(max-width:700px){
+    .terms{
+        padding: 60px 0;
+        &__title{
+            margin-bottom: 10px;
+        }
+        &__text{
+            margin-bottom: 30px;
+        }
+    }
+}
